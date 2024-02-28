@@ -13,6 +13,7 @@ $(document).ready(function(){
   
       var cantidadImagenes = $('#mostrar-una').prop('checked') ? 1 : (limiteSuperior - limiteInferior + 1);
   
+      //json
       for (var i = 0; i < cantidadImagenes; i++) {
         var numeroImagen = $('#mostrar-una').prop('checked') ? limiteInferior : (limiteInferior + i);
         $.getJSON('https://jsonplaceholder.typicode.com/photos/' + numeroImagen, function(data) {
