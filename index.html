@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio #4</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="blue lighten-5">
+  <header>
+    <nav class="blue">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Tarea #4</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="row">
+
+        <!--Columna de Opciones-->
+        <div class="col s4">
+            <h4 class="center-align">Opciones</h4>
+            
+            <div class="input-field">
+            <input type="number" id="limite-inferior" min="1" max="100">
+            <label for="limite-inferior">Límite Inferior</label>
+            </div>
+            
+            <div class="input-field">
+            <input type="number" id="limite-superior" min="1" max="100">
+            <label for="limite-superior">Límite Superior</label>
+            </div>
+            
+            <div class="switch">
+            <label>
+                Mostrar una
+                <input type="checkbox" id="mostrar-una">
+                <span class="lever"></span>
+            </label>
+            </div>
+            
+            <button class="btn waves-effect waves-light" id="mostrar-btn">Mostrar</button>
+        </div>
+
+        <!--Columna de Imagenes-->
+        <div class="col s8"> 
+            <h4 class="center-align">Imágenes</h4>
+            <div id="imagenes-container"></div>
+        </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <script src="./js/script.js"></script>
+</body>
+</html>
+
